@@ -6,11 +6,11 @@ class School
   
   def initialize(name)
     @name = name
-    self.roster = {}
+    @roster = {}
   end
   
   def roster
-    self.roster
+    @roster
   end
   
   def add_student(student, grade)
