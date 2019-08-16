@@ -6,23 +6,23 @@ class School
   
   def initialize(name)
     @name = name
-    @roster = {}
+    self.roster = {}
   end
   
   def roster
-    @roster
+    self.roster
   end
   
   def add_student(student, grade)
-    if @roster[grade]
-      @roster[grade] << student
+    if self.roster[grade]
+      self.roster[grade] << student
     else
-      @roster[grade] = [student]
+      self.roster[grade] = [student]
     end
   end
   
   def grade(grade)
-    @roster[grade]
+    self.roster[grade]
   end
   
   def sort
